@@ -1,0 +1,25 @@
+{
+  "name": "BMI",
+  "version": "1.0.0",
+  "description": "An application for parents who'd like to check their child's BMI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyrodarte/BMI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyrodarte/BMI/issues"
+  },
+  "homepage": "https://github.com/anthonyrodarte/BMI#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
