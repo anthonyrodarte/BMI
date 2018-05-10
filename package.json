@@ -4,7 +4,7 @@
   "description": "An application for parents who'd like to check their child's BMI.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "browserify -t babelify client/ -o server/public/main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,23 @@
     "url": "https://github.com/anthonyrodarte/BMI/issues"
   },
   "homepage": "https://github.com/anthonyrodarte/BMI#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "eslint": "4.5.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-react": "7.3.0",
+    "eslint-plugin-standard": "3.0.1",
+    "htmlhint": "0.9.13",
+    "stylelint": "8.0.0",
+    "stylelint-config-standard": "17.0.0",
+  },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.3.2",
