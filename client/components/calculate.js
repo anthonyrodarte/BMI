@@ -1,3 +1,3 @@
-export default function calculate(weight, height) {
+export default function Calculate(weight, height) {
   return weight / (height * height) * 703
 }
