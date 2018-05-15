@@ -33,12 +33,23 @@ export default class App extends React.Component {
     })
   }
   submit() {
-    console.log(Calculate(this.state.weight, this.state.height))
+    const bmi = Calculate(this.state.weight, this.state.height)
+    if (!bmi) {
+      return null
+    }
+    else {
+      this.setState({
+        bmi: bmi
+      })
+    }
   }
   render() {
     return (
-      <div className="w-50">
-        <Calculator age={this.updateAge} height={this.updateHeight} weight={this.updateWeight} submit={this.submit} />
+      <div>
+        <div className="w-50 mb-3">
+          <Calculator age={this.updateAge} height={this.updateHeight} weight={this.updateWeight} submit={this.submit} />
+        </div>
+        {this.state.bmi}
       </div>
     )
   }
