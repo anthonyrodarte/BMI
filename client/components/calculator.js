@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Calculator(props) {
   return (
-    <div className="text-center">
+    <div>
       <div className="input-group input-group-sm mb-3">
         <div className="input-group-prepend">
           <span className="input-group-text" id="inputGroup-sizing-sm">Age</span>
