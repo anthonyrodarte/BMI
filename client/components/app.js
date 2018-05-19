@@ -45,12 +45,18 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <div className="text-center">
-        <div className="w-50 mb-3">
-          <Calculator age={this.updateAge} height={this.updateHeight} weight={this.updateWeight} submit={this.submit} />
-          <div className="mt-3">
-            {this.state.bmi}
+      <div className="container">
+        <div className="row">
+          <div className="col"/>
+          <div className="col text-center">
+            <div className="w-50 mb-3">
+              <Calculator age={this.updateAge} height={this.updateHeight} weight={this.updateWeight} submit={this.submit} />
+              <div className="mt-3">
+                {this.state.bmi}
+              </div>
+            </div>
           </div>
+          <div className="col"/>
         </div>
       </div>
     )
